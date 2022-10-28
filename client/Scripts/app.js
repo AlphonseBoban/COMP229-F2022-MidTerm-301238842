@@ -1,4 +1,9 @@
 /* custom JS goes here */
+//Filename : app.js
+//Student : Alphonse Maria Boban
+//Student ID:301238842
+//Web app name:Faculty Information
+//Date :Oct 28,2022
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){

@@ -2,7 +2,6 @@
 let express = require("express");
 let router = express.Router();
 let mongoose = require("mongoose");
-//let Faculty = require("../models/faculties");
 
 // define the faculty model
 let faculty = require("../models/faculties");
