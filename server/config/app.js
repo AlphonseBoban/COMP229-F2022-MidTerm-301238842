@@ -10,10 +10,9 @@ let mongoose = require("mongoose");
 // URI
 let DB = require("./db");
 
-mongoose.connect(process.env.URI || DB.URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+//point mongoose to the DB URI
+mongoose.connect(DB.URI, { useNewUrlParser: true,
+  useUnifiedTopology: true});
 
 let mongoDB = mongoose.connection;
 mongoDB.on("error", console.error.bind(console, "Connection Error:"));
@@ -37,6 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../../client")));
+app.use(express.static(path.join(__dirname, "../../node_modules")));
 
 // route redirects
 app.use("/", index);
