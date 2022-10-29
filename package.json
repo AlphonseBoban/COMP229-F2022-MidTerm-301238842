@@ -1,9 +1,9 @@
 {
-  "name": "comp229-f2020-midterm",
+  "name": "comp229-f2022-midterm",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./server.js"
+    "start": "node ./index.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
