@@ -29,7 +29,7 @@
     "npm": "^8.12.0"
   },
   "description": "## Welcome to the MidTerm Project - the Favourite Book List App",
-  "main": "index.js",
+  "main": "server.js",
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
     "@types/connect-flash": "0.0.34",
